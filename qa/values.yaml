@@ -19,11 +19,11 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod-dns01
     acme.cert-manager.io/http01-edit-in-place: "true"
   hosts:
-    - host: artemis-qa.mamatkyzy.com
+    - host: qa.mamatkyzy.com
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls:
     - secretName: artemis-qa-tls
       hosts:
-        - artemis-qa.mamatkyzy.com
+        - qa.mamatkyzy.com
