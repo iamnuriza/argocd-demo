@@ -2,7 +2,7 @@ replicaCount: 3
 
 
 image:
-  repository: https://artemis-qa.mamatkyzy.com/
+  repository: nginx https://artemis-qa.mamatkyzy.com/
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "9.0.0"
