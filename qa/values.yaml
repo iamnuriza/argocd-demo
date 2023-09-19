@@ -24,6 +24,6 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
   tls:
-    - secretName: artemis-tls
+    - secretName: artemis-qa-tls
       hosts:
         - artemis-qa.mamatkyzy.com
