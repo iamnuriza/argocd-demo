@@ -1,8 +1,10 @@
 replicaCount: 3
 
-service:
-  type: ClusterIP
-  port: 80
+image:
+  repository: us-central1-docker.pkg.dev/terraform-project-nuriza/artemis/artemis/artemis
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "8.0.0"
 
 ingress:
   enabled: true
@@ -17,6 +19,6 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
   tls:
-    - secretName: artemis-tls
+    - secretName: artemis-stage-tls
       hosts:
         - artemis-stage.mamatkyzy.com
