@@ -2,7 +2,7 @@ replicaCount: 1
 
 
 image:
-  repository: us-central1-docker.pkg.dev/terraform-project-nuriza/artemis/artemis
+  repository: us-central1-docker.pkg.dev/terraform-project-nuriza/artemis/artemis/artemis
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "9.0.0"
